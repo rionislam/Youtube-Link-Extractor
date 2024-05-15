@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "YouTube Link Extractor",
   "version": "1.0",
-  "description": "This helps to extract links of embadded youtube videos from any webpage",
+  "description": "This helps to extract links of embedded youtube videos from any webpage",
   "permissions": [
     "activeTab",
     "scripting"
