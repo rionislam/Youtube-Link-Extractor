@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 324px;
+    min-height: 200px;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+hr{
+    height: 1px;
+    background: rgba(128, 128, 128, 0.342);
+    width: 100%;
+    border: none;
+}
+
+
+#title{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 1rem 0.5rem 1rem;
+    img{
+        height: 1.5em;
+        margin-right: 0.25em;
+    }
+}
+
+#urlsContainer{
+    min-height: 97px;
+    margin: 0 1rem;
+}
+
+#urlsContainer p{
+    margin-top: 40px;
+ text-align: center;
+}
+
+#urlsContainer ol{
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+#urlsContainer ol li .container{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    a{
+        color: black;
+        font-family: system-ui, sans-serif;
+        text-decoration: none;
+    }
+
+    img{
+        height: 1.2em;
+        margin-left: auto;
+        margin-right: 0.5rem;
+        cursor: pointer;
+    }
+
+    img:hover{
+        scale: 1.05;
+    }
+
+    .copied{
+        position: absolute;
+        top: 0;
+        right: 24px;
+        width: 0;
+        height: 0;
+        font-size: 0px;
+        padding: 0;
+        opacity: 0;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 3px 3px 10px 1px gray;
+        animation: popup 0.6s ease-in-out forwards, fadeout 0.6s 2s forwards;
+    }
+
+}
+
+#url {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.btnContainer{
+    text-align: center;
+}
+
+#extractBtn{
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    margin: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#extractBtn:hover{
+    scale: 1.02;
+}
+
+@keyframes popup {
+    0%{
+        top: 0;
+        right: 24px;
+        width: 0;
+        height: 0;
+        font-size: 0px;
+        padding: 0;
+        opacity: 0;
+    }
+    30%{
+        font-size: 0px;
+    }
+    100%{
+        top: -33px;
+        right: -9.2px;
+        width: unset;
+        height: unset;
+        font-size: unset;
+        padding: 0.25rem 0.5rem;
+        opacity: 1;
+    }
+    
+}
+
+@keyframes fadeout {
+    0%{
+        opacity: 1;
+    }100%{
+        opacity: 0;
+    }
+}
