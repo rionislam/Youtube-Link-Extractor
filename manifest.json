@@ -4,8 +4,10 @@
   "version": "1.0",
   "description": "This helps to extract links of embedded youtube videos from any webpage",
   "permissions": [
+    "tabs",
     "activeTab",
-    "scripting"
+    "webRequest",
+    "webRequestBlocking"
   ],
   "action": {
     "default_popup": "popup.html",
