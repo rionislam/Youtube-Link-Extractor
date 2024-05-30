@@ -16,20 +16,34 @@ This is a chrome extension which helps to extract links of embedded youtube vide
 - Multiple link extraction.
 - Copy button to easily copy any link.
 
+## Downloads
+
+ **[Youtube Link Extractor for Chromium](https://raw.githubusercontent.com/rionislam/Youtube-Link-Extractor/Chromium/build/Youtube-LInk-Extractor-1.0(Chromium).zip)**
+
+ **[Youtube Link Extractor for Firefox](https://raw.githubusercontent.com/rionislam/Youtube-Link-Extractor/Firefox/build/Youtube-Link-Extractor-1.0(Firefox).xpi)**
+ 
+## Install
+
+### On chromium based browsers
+- Download the *Youtube Link Extractor for Chromium* from above
+- Extract the zip file
+- Go to `chrome://extensions/` or navigate to the extension tab from browser menu
+- Turn on the developer mode
+- Click **Load unpacked** button and select the extracted folder
+- You are ready to go
+
+### On firefox based browsers
+- Donwload the *Youtube Link Extractor for Firefox* from above
+- Go to `about:addons` or navigate to the extension tab from browser menu
+- Click on the settings icon and then click **Install Ad-on from file** and select the ***.xpi*** file you have downloaded
+- You are ready to go
+
 ## How to use?
 
-### Install 
-- Download the zip file and extract it.
-- Go to `chrome://extensions/` and click on the **Load unpacked** button.
-- Select the folder inside the extracted folder and click open
-
-### Extract & Copy
-- Click on the extension icon to open it
-- Click on **Extract YouTube Url**
-- If there is any youtube video embedded the links will be listed
-- Click on the copy icon to copy the url and your are good to go
+- Open the extension while you are on your targated page
+- Click **Extract YouTube Link**
+- All the links of embedded youtube videos on this page will apare in a list
+- You can copy a specific link by clicking the copy button available to the right of the specific link
 
 
 **Please consider giving a star on this.**
-
-
