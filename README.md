@@ -1,6 +1,6 @@
 # Youtube Link Extractor
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/rionislam/youtube-link-extractor/releases/tag/v1.0.0)
+[![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://github.com/rionislam/youtube-link-extractor/releases/tag/v1.0.1)
 
 This is a chrome extension which helps to extract links of embedded youtube videos from any webpage
 
@@ -45,7 +45,6 @@ This is a chrome extension which helps to extract links of embedded youtube vide
 ## How to use?
 
 - Open the extension while you are on your targated page
-- Click **Extract YouTube Link**
 - All the links of embedded youtube videos on this page will apare in a list
 - You can copy a specific link by clicking the copy button available to the right of the specific link
 
