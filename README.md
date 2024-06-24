@@ -18,9 +18,9 @@ This is a chrome extension which helps to extract links of embedded youtube vide
 
 ## Downloads
 
- **[Youtube Link Extractor for Chromium](https://raw.githubusercontent.com/rionislam/Youtube-Link-Extractor/Chromium/build/Youtube-LInk-Extractor-1.0(Chromium).zip)**
+ **[Youtube Link Extractor for Chromium](https://raw.githubusercontent.com/rionislam/Youtube-Link-Extractor/Chromium/build/Youtube-LInk-Extractor-1.0.1(Chromium).zip)**
 
- **[Youtube Link Extractor for Firefox](https://raw.githubusercontent.com/rionislam/Youtube-Link-Extractor/Firefox/build/Youtube-Link-Extractor-1.0(Firefox).xpi)**
+ **[Youtube Link Extractor for Firefox](https://raw.githubusercontent.com/rionislam/Youtube-Link-Extractor/Firefox/build/Youtube-Link-Extractor-1.0.1(Firefox).xpi)**
 
 ## Install
 
