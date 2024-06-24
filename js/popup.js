@@ -1,14 +1,18 @@
+import extractYoutubeUrls from "./extractYoutubeUrls.js";
 import copyUrl from "./copyUrl.js";
 
 let urlsContainer = document.getElementById('urlsContainer');
 
 async function extractAndDisplayUrls() {
+  try {
     let [tab] = await browser.tabs.query({ active: true, currentWindow: true });
 
-  browser.tabs.executeScript(tab.id, {
-    file: "./extractYoutubeUrls.js"
-  }, (results) => {
-    const extractedUrls = results && results[0] && results[0].result;
+    // Execute content script using executeScript
+    let results = await browser.tabs.executeScript(tab.id, {
+      code: `(${extractYoutubeUrls})()`
+    });
+
+    const extractedUrls = results && results[0];
 
     if (extractedUrls && extractedUrls.length > 0) {
       const listItems = extractedUrls.map(url => `
@@ -24,7 +28,10 @@ async function extractAndDisplayUrls() {
     } else {
       urlsContainer.innerHTML = '<p>No YouTube videos found on this page.</p>';
     }
-  });
+  } catch (error) {
+    console.error('Error extracting URLs:', error);
+    urlsContainer.innerHTML = '<p>Error extracting YouTube URLs. Please try again.</p>';
+  }
 }
 
 extractAndDisplayUrls();
