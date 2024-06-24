@@ -2,8 +2,8 @@ import copyUrl from "./copyUrl.js";
 
 let urlsContainer = document.getElementById('urlsContainer');
 
-document.getElementById('extractBtn').addEventListener('click', async () => {
-  let [tab] = await browser.tabs.query({ active: true, currentWindow: true });
+async function extractAndDisplayUrls() {
+    let [tab] = await browser.tabs.query({ active: true, currentWindow: true });
 
   browser.tabs.executeScript(tab.id, {
     file: "./extractYoutubeUrls.js"
@@ -25,8 +25,9 @@ document.getElementById('extractBtn').addEventListener('click', async () => {
       urlsContainer.innerHTML = '<p>No YouTube videos found on this page.</p>';
     }
   });
-});
+}
 
+extractAndDisplayUrls();
 
 urlsContainer.addEventListener('click', (event) => {
   if (event.target && event.target.classList.contains('copyBtn')) {

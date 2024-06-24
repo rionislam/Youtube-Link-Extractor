@@ -34,13 +34,13 @@ hr{
 }
 
 #urlsContainer{
-    min-height: 97px;
+    min-height: 139px;
     margin: 0 1rem;
 }
 
 #urlsContainer p{
     margin-top: 40px;
- text-align: center;
+    text-align: center;
 }
 
 #urlsContainer ol{
